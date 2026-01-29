@@ -1,0 +1,37 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap");
+
+@theme {
+  --color-cream: #FFF8F0;
+  --color-cream-dark: #F5EDE3;
+  --color-terracotta: #C4613A;
+  --color-terracotta-light: #D4835F;
+  --color-terracotta-dark: #A34E2D;
+  --color-sage: #7C9070;
+  --color-sage-light: #9AB08E;
+  --color-sage-dark: #5F7353;
+  --color-brown: #8B6F47;
+  --color-brown-light: #A8896A;
+  --color-brown-dark: #6D5535;
+  --color-warm-gray: #6B6360;
+  --color-warm-gray-light: #9E9895;
+
+  --font-sans: "Nunito", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Playfair Display", ui-serif, Georgia, serif;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-cream);
+  color: #3D3330;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+}
+
+@layer base {
+  * {
+    border-color: theme(colors.cream-dark);
+  }
+}
