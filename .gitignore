@@ -9,3 +9,9 @@ node_modules
 out/
 
 /generated/prisma
+
+# TypeScript build cache
+tsconfig.tsbuildinfo
+
+# Claude Code local settings
+.claude/
